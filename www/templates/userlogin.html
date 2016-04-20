@@ -1,0 +1,39 @@
+<!--    <div class="bar bar-header bar-stable">
+  <h1 class="title">Cracked TV eForm</h1>
+</div> -->
+<ion-view view-title="User Login" class="green-bg" ng-controller="AppCtrl">
+
+   <ion-content>
+
+
+   <div style="color:#fff;margin:0 auto;text-align: center;font-size:1.3em;">
+   <img class="logo-shadow" style="margin-top:50px;margin-bottom:10px;max-width: 150px;border-radius: 20px" src="img/senlogo.png">
+   <p>Cracked TV eForm</p>
+   </div>
+
+
+   <div class="list list-inset">
+  <label class="item item-input">
+    <input  name="username" type="text" ng-model="loginform.username" placeholder="Username">
+  </label>
+  <label class="item item-input">
+    <input  name="password" type="password" ng-model="loginform.password" placeholder="Password">
+  </label>
+
+
+</div>
+
+<div style="padding: 10px;margin: 0 auto; text-align: center;">
+  <button ng-click="amLogin()" class="button icon-left ion-android-send button-stable">Login</button>
+
+  <button class="button icon-left ion-android-refresh button-stable">Reset</button>  
+</div>
+
+
+
+
+
+  </ion-content>
+         <div ng-show="false" class="spinner">
+<ion-spinner icon="android"></ion-spinner>
+</ion-view>

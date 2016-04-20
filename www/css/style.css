@@ -1,0 +1,48 @@
+/* Empty. Add your own CSS if you like */
+
+.green-bg{
+
+	background-color: #00A651;
+}
+
+.logo-shadow { 
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter:         drop-shadow(5px 5px 5px #222); 
+}
+
+.loadingdiv{
+
+
+text-align: center;
+	margin:0 auto;
+
+width:100%;
+height: 100%;
+
+
+}
+
+div.spinner {
+	padding-top: 60%;
+
+	/*background-color: #fff;*/
+	background-color:rgba(192,192,192,0.7);
+	z-index: 9999;
+  margin: auto;
+  position: absolute;
+ /* top: 0; left: 0; bottom: 0; right: 0;*/
+  /*height: 85px;*/
+  text-align: center;
+  width: 100%;
+  height: 100%;
+/*  border-radius: 10px;*/
+/*  border:1px solid #bdbdbd;*/
+}
+
+.spinner svg {
+
+
+  width: 100px;
+  height: 100px;
+
+}

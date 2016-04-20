@@ -1,0 +1,96 @@
+<ion-view view-title="Submit Cracked TV eForm" class="green-bg" ng-controller="AppCtrl" >
+
+   <ion-content>
+
+
+<div class="list list-inset">
+  <label class="item item-input">
+    <input ng-model="formData.sdcode" type="text" placeholder="SD Code">
+  </label>
+  <label class="item item-input">
+    <input ng-model="formData.ssono" type="text" placeholder="SSO No">
+  </label>
+   <label class="item item-input">
+ <!--    <input type="date" placeholder="SSO Date"> -->
+ <input ng-model="formData.date"  type="text" ng-focus="datepicker()" placeholder="SSO Date">
+<!--  onfocus="(this.type='date')" -->
+  </label>
+
+  <div class="list" >
+
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Product Type
+    </div>
+    <select ng-model="formData.type">
+      <option value="UHD" selected>UHD</option>
+      <option value="LED">LED</option>
+      <option value="LCD">LCD</option>
+       <option value="PLASMA">PLASMA</option>
+    </select>
+  </label>
+
+</div>
+
+
+
+<!-- </div>
+<div class="list list-inset"> -->
+  <label class="item item-input" style="margin-top:-22px">
+    <input ng-model="formData.brand" type="text" placeholder="Brand">
+  </label>
+  <label class="item item-input">
+    <input ng-model="formData.model" type="text" placeholder="Model">
+  </label>
+  <label class="item item-input">
+    <input ng-model="formData.serial" type="text" placeholder="Serial No">
+  </label>
+
+
+    <div class="list">
+
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Comment
+    </div>
+    <select ng-model="formData.comm">
+      <option ng-value="DOA" selected>DOA</option>
+      <option ng-value="MISHANDLING" >MISHANDLING</option>
+      <option ng-value="UNKNOWN">UNKNOWN</option>
+      
+    </select>
+  </label>
+
+</div>
+  </div>
+<div style="margin-left:10px;margin-right:10px;">
+<!--   <button ng-click="addImage()" class="button button-full icon-left ion-camera button-positive">Add Photo</button> -->
+
+<div class="button-bar ">
+  <a ng-click="addImage('camera')" class="button  icon-left ion-camera button-dark">Camera</a>
+
+  <a ng-click="addImage('gallery')" class="button ion-images icon-left button-dark">Gallery</a>
+  
+</div>
+
+</div>
+<br><br>
+  <ion-scroll>
+	  <img ng-repeat="image in images" ng-src="{{urlForImage(image)}}" width="20%" height="auto" style="margin-left:10px;" />
+  </ion-scroll>
+
+<br>
+
+<div style="margin:0 auto;text-align: center;">
+<button ng-click="pushdata()" style="width:40%;" class="button icon-left ion-android-upload button-stable">Submit</button>
+
+</div>
+
+
+
+     </ion-content>
+       <div ng-show="false" class="spinner">
+<ion-spinner icon="android"></ion-spinner>
+</div>
+</ion-view>
+
